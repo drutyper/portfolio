@@ -14,12 +14,12 @@ layout: default
     {% for project in site.portfolio limit:3 %}
     <div class="project">
       <div class="project-thumb">
-        <a href="">
+        <a target="_blank" href="{{project.external-url}}">
           <img src="{{ project.thumbnail-path }}" alt="{{ project.title }}"/>
         </a>
       </div>
       <div class="project-description">
-        <a href=""><strong>{{ project.title }}</strong></a>
+        <a target="_blank" href="{{project.external-url}}"><strong>{{ project.title }}</strong></a>
         <p>{{ project.short-description }}</p>
       </div>
     </div>
